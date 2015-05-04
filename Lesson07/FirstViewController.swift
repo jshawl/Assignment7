@@ -7,10 +7,14 @@
 //
 
 import UIKit
-
+ 
 class FirstViewController: UIViewController {
-
+    
+@IBOutlet weak var textView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let testString = NSUserDefaults.standardUserDefaults().stringForKey("test_string")
+        let testNumber = NSUserDefaults.standardUserDefaults().integerForKey("test_number")
+        textView.text = "\(testString!) \(testNumber)"
     }
 }
