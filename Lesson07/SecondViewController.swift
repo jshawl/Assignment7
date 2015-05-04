@@ -10,9 +10,12 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var textView: UITextView!
+    var settings: NSDictionary?
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let stringValue = NSUserDefaults.standardUserDefaults().stringForKey("settings_name")
+        let sliderValue = NSUserDefaults.standardUserDefaults().stringForKey("settings_slider")
+        textView.text = "\(stringValue) \(sliderValue)"
     }
 }
