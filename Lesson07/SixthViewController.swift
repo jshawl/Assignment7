@@ -11,9 +11,13 @@ import UIKit
 
 class SixthViewController: UIViewController {
 
+    @IBOutlet weak var textView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as NSString
+        var fullPath = documentsPath.stringByAppendingPathComponent("five.txt")
+        let array = NSArray(contentsOfFile: fullPath)!
+        textView.text = array.description
 
-        // Do any additional setup after loading the view.
     }
 }

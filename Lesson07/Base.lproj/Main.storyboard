@@ -230,6 +230,9 @@
                             <constraint firstItem="e66-bG-ZBU" firstAttribute="top" secondItem="qPA-4h-ilE" secondAttribute="bottom" id="wFw-wb-w01"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="qPA-4h-ilE" id="lpq-ds-Vvk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oU3-RH-uDj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -270,6 +273,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="textView" destination="nBD-AK-qjV" id="kcJ-ya-inO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lsy-el-VFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
